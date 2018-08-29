@@ -4,10 +4,10 @@ import java.math.BigDecimal;
 import java.util.HashMap;
 import java.util.Objects;
 
-class RentalInfo {
+public class RentalInfo {
   private HashMap<String, Movie> movies = getMovies();
 
-  String statement(Customer customer) {
+  public String statement(Customer customer) {
 
     BigDecimal totalAmount = BigDecimal.valueOf(0);
     int frequentRenterPoints = 0;
@@ -33,16 +33,14 @@ class RentalInfo {
       totalAmount = totalAmount.add(thisAmount);
     }
 
-    // add footer lines
-    resultBuilder
+    return resultBuilder
         .append("Amount owed is ")
         .append(totalAmount)
         .append("\n")
         .append("You earned ")
         .append(frequentRenterPoints)
-        .append(" frequent renter points\n");
-
-    return resultBuilder.toString();
+        .append(" frequent renter points\n")
+        .toString();
   }
 
   private int getFrequentRenterPointsForRental(String movieCode, MovieRental rental, int currentRenterPoints) {

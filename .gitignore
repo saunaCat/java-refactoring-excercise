@@ -1,3 +1,4 @@
+
 # Compiled class file
 *.class
 
@@ -34,6 +35,9 @@ gradle-app.setting
 
 # Cache of project
 .gradletasknamecache
+
+.DS_Store
+test/com/greatersum/.DS_Store
 
 # # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
 # gradle/wrapper/gradle-wrapper.properties
