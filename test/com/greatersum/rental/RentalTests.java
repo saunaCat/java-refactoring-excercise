@@ -1,7 +1,5 @@
 package com.greatersum.rental;
 
-import java.io.IOException;
-import java.net.URISyntaxException;
 import org.junit.Assert;
 import org.junit.Test;
 
