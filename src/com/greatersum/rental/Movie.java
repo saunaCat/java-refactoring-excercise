@@ -2,9 +2,9 @@ package com.greatersum.rental;
 
 class Movie {
     private final String title;
-    private final String code;
+    private final PriceCode code;
 
-    Movie(String title, String code) {
+    Movie(String title, PriceCode code) {
         this.title = title;
         this.code = code;
     }
@@ -13,7 +13,7 @@ class Movie {
         return title;
     }
 
-    String getCode() {
+    PriceCode getCode() {
         return code;
     }
 }
